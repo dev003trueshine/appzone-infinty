@@ -1,0 +1,22 @@
+.product-card {
+    background-color: #acc878;
+    border-radius: .75rem;
+    border: 1px solid #e0e0e0;
+    padding: 32px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.08, 1.08);
+    }
+
+    .product-icon {
+        width: 256px;
+        min-width: 256px;
+        height: 256px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        transition: all .3s ease-in-out;
+    }
+}
