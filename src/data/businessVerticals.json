@@ -1,0 +1,17 @@
+[
+  { "title": "Banking", "image": "banking.png" },
+  { "title": "Fintech", "image": "fintech.png" },
+  { "title": "Healthcare", "image": "healthcare.png" },
+  { "title": "Insurance", "image": "insurance.png" },
+  { "title": "Investment", "image": "investment.png" },
+  { "title": "Manufacturing", "image": "manufacturing.png" },
+  { "title": "Lending", "image": "lending.png" },
+  { "title": "IT", "image": "it.png" },
+  { "title": "Professional Services", "image": "professional-services.png" },
+  { "title": "Oil & Gas", "image": "oill_and_gas.png" },
+  { "title": "Retail", "image": "retail.png" },
+  { "title": "Supply Chain & Logistics", "image": "supply-chain-and-logistic.png" },
+  { "title": "Telecommunication", "image": "telecoumnication.png" },
+  { "title": "Entertainment", "image": "entertainment.png" },
+  { "title": "Education", "image": "education.png" }
+]

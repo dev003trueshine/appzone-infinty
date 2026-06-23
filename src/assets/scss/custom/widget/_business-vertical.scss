@@ -1,0 +1,34 @@
+.business-vertical-card {
+    &:hover {
+        .business-vertical-img {
+            width: 100px;
+            transition: width 1s;
+
+        }
+
+        .mt-n1 {
+            margin: 0;
+            transition: 1s ease-in-out;
+        }
+
+    }
+    .h-150 {
+        height: 150px;
+    }
+
+    .mt-n1 {
+        margin-top: -1rem;
+    }
+
+    .glass {
+        background: rgba(255, 255, 255, .2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, .3);
+        width: fit-content;
+        margin: auto;
+        padding: 2px 38px;
+    }
+}

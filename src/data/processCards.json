@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Requirement Gathering",
+    "description": "Stakeholder needs are gathered and converted into clear, actionable requirements.",
+    "icon": "requirement-gathering"
+  },
+  {
+    "title": "Design and UI/UX",
+    "description": "Requirements are transformed into system architecture, UI/UX designs, and finalized technology decisions.",
+    "icon": "design-ui-ux"
+  },
+  {
+    "title": "Development",
+    "description": "The solution is developed iteratively using defined standards, chosen technologies, and regular collaboration.",
+    "icon": "development"
+  },
+  {
+    "title": "Testing and Deployment",
+    "description": "The software is tested to fix issues and ensure quality, then deployed with monitoring to ensure stability.",
+    "icon": "testing-deployment"
+  },
+  {
+    "title": "Maintenance & Support",
+    "description": "Post-launch, performance is monitored, issues are resolved, and updates are released based on user feedback.",
+    "icon": "maintenance-support"
+  }
+]
