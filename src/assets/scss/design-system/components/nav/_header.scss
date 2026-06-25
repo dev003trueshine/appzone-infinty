@@ -26,3 +26,23 @@ header {
     // }
   }
 }
+
+.app-header__logo {
+      height: 60px;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: var(--bs-gray-100);
+}
+
+.app-header .nav-link {
+  color: var(--bs-body-color);
+  font-weight: 600;
+}
+
+.app-header .nav-link:hover {
+  color: var(--bs-primary);
+}

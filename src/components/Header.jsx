@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light px-0 py-3">
           <a className="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img src={logo} alt="Appzone Infinity logo" className="app-header__logo" />
+            <img src={logo} alt="Appzone Infinity logo" className="app-header__logo img-fluid" />
           </a>
 
           <button

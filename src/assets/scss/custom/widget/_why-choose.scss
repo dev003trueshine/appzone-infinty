@@ -1,11 +1,8 @@
 .choose-card {
-    background-color: #fff;
+        background: var(--bs-gray-100);
     padding: 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--bs-border-color);
     border-radius: 8px;
-.choose-content {
-    
-}
     .choose-icon {
         width: 90px;
         min-width: 90px;
