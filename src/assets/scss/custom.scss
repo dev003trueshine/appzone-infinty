@@ -10,10 +10,10 @@
 // scss-docs-start import-stack
 // Configuration
 @import "./bootstrap/functions";
+@import "./design-system/_variables";
 @import "./bootstrap/variables";
 
 // variable
-@import "./design-system/variables";
 @import "./design-system/variables-dark";
 @import "./bootstrap/variables-dark";
 @import "./bootstrap/maps";

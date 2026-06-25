@@ -1,0 +1,15 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: #ffffff;
+}
+
+.app-header .nav-link {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.app-header .nav-link:hover {
+  color: #2563eb;
+}

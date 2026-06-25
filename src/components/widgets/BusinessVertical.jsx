@@ -4,7 +4,7 @@ export default function BusinessVertical({ icon, title }) {
   return (
     <div className="business-vertical-card h-100 text-center">
       <div className="h-150">
-        <div class="position-relative">
+        <div className="position-relative">
           <img src={icon} alt={title} className="business-vertical-img" height="80px" width="80px" />
         </div>
         <div className="mt-n1">

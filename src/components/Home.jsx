@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="container py-5">
       <section className="mb-5">
-        <Title text="Our Services" className="mb-5 text-center" />
+        <Title text="Our Services" className="mb-5 text-center text-primary" />
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
           <div className="col">
             <ServiceCard />
@@ -77,7 +77,7 @@ export default function Home() {
       
       <section className="mb-5">
         <Title text="Business Verticals We Served" className="mb-5 text-center" />
-        <div className="row row-cols-2 row-cols-md-2 row-cols-lg-6 gy-4">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-6 gy-4">
           {businessVerticals.map((item, idx) => {
             const images = {
               'banking.png': bankingImg,
