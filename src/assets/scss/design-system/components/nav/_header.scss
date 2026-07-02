@@ -35,12 +35,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 1030;
-  background: var(--bs-gray-100);
+  background: rgba(2, 6, 23, 0.85);
+  border-bottom: 1px solid var(--bs-border-color);
 }
 
 .app-header .nav-link {
-  color: var(--bs-body-color);
-  font-weight: 600;
+  color: var(--bs-heading-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+    position: relative;
+    padding: 5px 0;
 }
 
 .app-header .nav-link:hover {

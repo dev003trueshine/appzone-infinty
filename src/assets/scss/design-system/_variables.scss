@@ -7,13 +7,13 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff;
-$gray-100: #1E293B; // 
+$gray-100: #0f172a; // alernative background
 $gray-200: #64748B; // gray-200
 $gray-300: #d1d5db; // footer
 $gray-400: #9ca3af; // review text
-$gray-500: #0F172A; // bg color
+$gray-500: #020617; // bg color
 $gray-600: #7C3AED; // secondary text
-$gray-700: #94A3B8; // body text
+$gray-700: #94a3b8; // body text
 $gray-800: #374151; //use
 $gray-900: #ffffff; // white bg
 $black:    #000000; // bg dark
@@ -36,13 +36,13 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #38BDF8; //blue - primary
+$blue:    #0284c7; //blue - primary
 $indigo:  #4f46e5; //blue icon
-$purple:  #6f42c1;
+$purple:  #a855f7;
 $pink:    #C77DFF;  //secondary
 $red:     #F87171;  // danger
 $orange:  #f97316;  //orange
-$yellow:  #FBBF24;  // warning
+$yellow:  #f59e0b;  // warning
 $green:   #34D399; // success
 $teal:    #143d25; // teal
 $cyan:    #22D3EE;  // info
@@ -551,7 +551,7 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                #334155 !default;
+$border-color:                #1e293b !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 

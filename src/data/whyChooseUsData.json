@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Proven AI & Automation Expertise",
+    "description": "From autonomous AI agents and LangChain integrations to complex custom workflows, we build intelligent systems that drive real business growth and operational efficiency.",
+    "svgPath": "<path d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8Z' fill='currentColor'/><path d='M12 6a4 4 0 1 0 4 4 4 4 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2Z' fill='currentColor'/>"
+  },
+  {
+    "id": 2,
+    "title": "True Multi-Platform Capabilities",
+    "description": "We leverage high-performance Flutter and web frameworks to deliver natively compiled apps that remain seamlessly compatible across iOS, Android, and Web platforms.",
+    "svgPath": "<path d='M4 6h16v10H4zm17-2H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v2H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-2v-2h7a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z' fill='currentColor'/>"
+  },
+  {
+    "id": 3,
+    "title": "Tailored for Global Scalability",
+    "description": "We engineer robust SaaS architectures, high-concurrency Python backends, and international-grade mobile platforms built to serve a diverse, expanding global client base.",
+    "svgPath": "<path d='M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-6.93-4.34a8 8 0 0 1 0-11.32M18.93 6.34a8 8 0 0 1 0 11.32M12 4a8 8 0 0 1 0 16z' stroke='currentColor' stroke-width='2' fill='none'/>"
+  },
+  {
+    "id": 4,
+    "title": "Committed to On-Time Delivery",
+    "description": "We respect your timeline. By employing highly optimized state management and reliable development sprints, we guarantee dependable, on-time project delivery.",
+    "svgPath": "<path d='M12.5 7v5l3.5 2.5-.5.5-4-3V7h1z' fill='currentColor'/><path d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z' fill='currentColor'/>"
+  },
+  {
+    "id": 5,
+    "title": "Transparent & Predictable Pricing",
+    "description": "Skip the agency bloat. You work directly with core technical experts, receiving detailed milestone blueprints in advance so you can scale with absolute financial peace of mind.",
+    "svgPath": "<path d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14h-2v-1h-1a2 2 0 0 1-2-2h2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-2a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h1V6h2v1h1a2 2 0 0 1 2 2h-2a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2z' fill='currentColor'/>"
+  },
+  {
+    "id": 6,
+    "title": "Enterprise-Grade Data Security",
+    "description": "Your code and user privacy are sacred. We implement secure database protocols, safe social authentications, and strict data confidentiality standards to safeguard your secrets.",
+    "svgPath": "<path d='M12 2s-8 2.5-8 6v4c0 5.25 3.5 10.12 8 11 4.5-.88 8-5.75 8-11V8c0-3.5-8-6-8-6zm0 10H6V8.34l6-1.87v5.53z' fill='currentColor'/>"
+  }
+]

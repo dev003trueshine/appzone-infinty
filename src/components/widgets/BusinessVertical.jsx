@@ -7,7 +7,7 @@ export default function BusinessVertical({ icon, title }) {
         <div className="position-relative">
           <img src={icon} alt={title} className="business-vertical-img" height="80px" width="80px" />
         </div>
-        <div className="mt-n1">
+        <div className="test">
           <div className="glass">
             <h6 className="py-2 mb-0 text-nowrap">{title}</h6>
           </div>

@@ -54,10 +54,3 @@
     }
   }
 }
-
-/* Adjust main content padding to prevent bottom nav coverage */
-@media (max-width: 1199.98px) {
-  body {
-    padding-bottom: 70px;
-  }
-}

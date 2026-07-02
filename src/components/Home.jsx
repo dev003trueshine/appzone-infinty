@@ -1,13 +1,16 @@
 import React from 'react';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import Title from './widgets/Title';
-import ServiceCard from './widgets/service';
-import ProductCard from './widgets/AiProduct';
+import ServicesSection from './Section/ServicesSection';
+import ProductsSection from './Section/ProductsSection';
 import ChooseCard from './widgets/why-choose';
+import ClassesSection from './Section/ClassesSection';
 import BusinessVertical from './widgets/BusinessVertical';
 import ProcessCard from './widgets/ProcessCard';
 import VisionCard from './widgets/vision-card';
 import businessVerticals from '../data/businessVerticals.json';
 import processCards from '../data/processCards.json';
+import whyChooseUsData from '../data/whyChooseUsData.json';
 import bankingImg from '../assets/images/business/banking.png';
 import fintechImg from '../assets/images/business/fintech.png';
 import healthcareImg from '../assets/images/business/healthcare.png';
@@ -24,60 +27,36 @@ import telecomImg from '../assets/images/business/telecoumnication.png';
 import entertainmentImg from '../assets/images/business/entertainment.png';
 import educationImg from '../assets/images/business/education.png';
 
+import Banner from './widgets/Banner';
+
 export default function Home() {
   return (
-    <div className="container py-5">
-      <section className="mb-5">
-        <Title text="Our Services" className="mb-5 text-center text-primary" />
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
-          <div className="col">
-            <ServiceCard />
-          </div>
-          <div className="col">
-            <ServiceCard />
-          </div>
-          <div className="col">
-            <ServiceCard />
-          </div>
-        </div>
+    <Container className="">
+      <Banner />
+      <section className="Section-spacing">
+        <ServicesSection />
       </section>
 
-      <section className="mb-5">
-        <Title text="AI Products" className="mb-5 text-center" />
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
-          <div className="col">
-            <ProductCard />
-          </div>
-          <div className="col">
-            <ProductCard />
-          </div>
-          <div className="col">
-            <ProductCard />
-          </div>
-        </div>
-      </section>
+      <ProductsSection />
 
-      <section className="mb-5">
+      <section className="Section-spacing">
         <Title text="Why Choose Appzone Infinty?" className="mb-5 text-center" />
-        <div className="row row-cols-1 row-cols-md-2 gy-4">
-          <div className="col">
-            <ChooseCard />
-          </div>
-          <div className="col">
-            <ChooseCard />
-          </div>
-          <div className="col">
-            <ChooseCard />
-          </div>
-          <div className="col">
-            <ChooseCard />
-          </div>
-        </div>
+        <Row xs={1} md={2} lg={3} className="gy-4">
+          {whyChooseUsData.map((item) => (
+            <Col key={item.id}>
+              <ChooseCard
+                title={item.title}
+                description={item.description}
+                svgPath={item.svgPath}
+              />
+            </Col>
+          ))}
+        </Row>
       </section>
-      
-      <section className="mb-5">
+
+      <section className="Section-spacing">
         <Title text="Business Verticals We Served" className="mb-5 text-center" />
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-6 gy-4">
+        <Row xs={1} md={2} lg={6} className="gy-4">
           {businessVerticals.map((item, idx) => {
             const images = {
               'banking.png': bankingImg,
@@ -98,45 +77,37 @@ export default function Home() {
             };
 
             return (
-              <div className="col" key={idx}>
+              <Col key={idx}>
                 <BusinessVertical icon={images[item.image]} title={item.title} />
-              </div>
+              </Col>
             );
           })}
-        </div>
+        </Row>
       </section>
 
-      <section className="mb-5">
+      <section className="Section-spacing">
         <Title text="Our Process" className="mb-5 text-center" />
-        <div className="row gy-4">
-          <div className="col-lg-3">
-            <h3>Proven Process for Exceptional Products</h3>
-          </div>
-          <div className="col-lg-5"></div>
-          <div className="col-lg-3">
-            <p> We follow a structured, transparent workflow that accelerates delivery, reduces risk, and ensures premium digital product quality.</p>
-            <button className="btn btn-primary">Learn More</button>
-          </div>
-        </div>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center gy-4 mt-5">
+        <Row xs={1} md={2} lg={3} className="justify-content-center gy-4 mt-5">
           {processCards.map((item, idx) => (
-            <div className="col" key={idx}>
+            <Col key={idx}>
               <ProcessCard title={item.title} description={item.description} />
-            </div>
+            </Col>
           ))}
-        </div>
+        </Row>
       </section>
-      <section className="mb-5">
+      <ClassesSection />
+      
+      <section className="Section-spacing">
         <Title text="Our Vision & Mission" className="mb-5 text-center" />
-        <div className="row align-items-center justify-content-center position-relative">
-          <div className="col-lg-6">
+        <Row className="align-items-center justify-content-center position-relative">
+          <Col lg={6}>
             <VisionCard
               icon={<img src="https://kalkani.in/assets/img/vision-and-mission/our-vision.png" alt="Our Vision" width="100px" />}
               title="Our Vision"
               description="To provide reliable and simple solutions for complex problems."
             />
-          </div>
-          <div className="col-lg-6">
+          </Col>
+          <Col lg={6}>
             <VisionCard
               icon={<img src="https://kalkani.in/assets/img/vision-and-mission/our-mission.png" alt="Our Mission" width="100px" />}
               title="Our Mission"
@@ -149,9 +120,9 @@ export default function Home() {
                 description="To provide reliable and simple solutions for complex problems."
               />
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </section>
-    </div>
+    </Container>
   );
 }

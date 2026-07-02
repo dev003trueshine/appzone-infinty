@@ -120,6 +120,28 @@
     line-height: 2 !important;
 }
 
+// extra new
+.Section-spacing {
+    padding: 60px 0;
+}
+
+.logo-text {
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--bs-primary), var(--bs-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.vision-card {
+    background-color: var(--bs-gray-100);
+    color: var(--bs-heading-color);
+    padding: 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+//end
+
 // scroll
 /* width */
 ::-webkit-scrollbar {

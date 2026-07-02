@@ -1,5 +1,5 @@
 import React from 'react';
-import pythonIcon from '../../assets/images/service/Python-Programming.png';
+import pythonIcon from '../../assets/images/product/ai.png';
 
 export default function ServiceCard() {
   return (

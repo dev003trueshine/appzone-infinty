@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "PDFBox – Next-Gen PDF Utility",
+    "description": "An all-in-one productivity suite featuring a fluid UI for image-to-PDF conversion, advanced document editing, and secure digital signatures. Built with secure Google login and privacy-first guest modes.",
+    "category": "Productivity",
+    "iconClass": "FilePdf",
+    "image": "./img/pdfbox-mockup.jpg",
+    "actionText": "Get App",
+    "actionUrl": "#contact",
+    "hasArrow": true
+  },
+  {
+    "id": 2,
+    "title": "Tic Tac Toe Glow – XO Puzzle Game",
+    "description": "A timeless classic reimagined with stunning neon graphics. It features local and online multiplayer, smart AI opponents, and expanded grid challenges scaling up to 11x11 for ultimate brain training.",
+    "category": "Free Play",
+    "iconClass": "GameController",
+    "image": null,
+    "actionText": "Get Game",
+    "actionUrl": "#contact",
+    "hasArrow": false
+  },
+  {
+    "id": 3,
+    "title": "Sleepable.ai – Smart Sleep Tracker",
+    "description": "An advanced mobile ecosystem driven by intelligent sleep optimization. It integrates real-time audio analysis, contextual sleep tracking, and adaptive smart alarms to seamlessly improve rest and wellness.",
+    "category": "Free Try",
+    "iconClass": "Moon",
+    "image": null,
+    "actionText": "Install App",
+    "actionUrl": "#contact",
+    "hasArrow": false
+  }
+]

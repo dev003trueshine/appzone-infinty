@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
+import Header from './components/partials/Header';
+import Footer from './components/partials/Footer';
 import Home from './components/Home';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Home />
+      <Footer />
     </>
   );
 }
