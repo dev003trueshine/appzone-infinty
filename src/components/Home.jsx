@@ -36,9 +36,9 @@ export default function Home() {
       <section className="Section-spacing">
         <ServicesSection />
       </section>
-
-      <ProductsSection />
-
+      <section className="Section-spacing">
+            <ProductsSection />
+      </section>
       <section className="Section-spacing">
         <Title text="Why Choose Appzone Infinty?" className="mb-5 text-center" />
         <Row xs={1} md={2} lg={3} className="gy-4">
@@ -53,7 +53,6 @@ export default function Home() {
           ))}
         </Row>
       </section>
-
       <section className="Section-spacing">
         <Title text="Business Verticals We Served" className="mb-5 text-center" />
         <Row xs={1} md={2} lg={6} className="gy-4">
@@ -84,7 +83,6 @@ export default function Home() {
           })}
         </Row>
       </section>
-
       <section className="Section-spacing">
         <Title text="Our Process" className="mb-5 text-center" />
         <Row xs={1} md={2} lg={3} className="justify-content-center gy-4 mt-5">
@@ -94,9 +92,7 @@ export default function Home() {
             </Col>
           ))}
         </Row>
-      </section>
-      <ClassesSection />
-      
+      </section>      
       <section className="Section-spacing">
         <Title text="Our Vision & Mission" className="mb-5 text-center" />
         <Row className="align-items-center justify-content-center position-relative">
@@ -122,6 +118,9 @@ export default function Home() {
             </div>
           </Col>
         </Row>
+      </section>
+      <section className="Section-spacing">
+            <ClassesSection />
       </section>
     </Container>
   );

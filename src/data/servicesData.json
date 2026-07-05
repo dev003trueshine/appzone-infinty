@@ -4,7 +4,7 @@
     "title": "Mobile App Development",
     "description": "Build high-performance, native-quality mobile applications for iOS and Android from a single codebase. We deliver scalable architectures, fluid animations, and smooth user experiences that keep users coming back.",
     "svgIcon": "<path d='M17 2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-5 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm5-4H7V6h10v10z' fill='currentColor'/>",
-    "graphicImage": "Generative-AI.png",
+    "graphicImage": "Python-Programming.png",
     "fallbackText": "[ Mobile Application Platform Matrix ]"
   },
   {
@@ -12,7 +12,7 @@
     "title": "Frontend Engineering",
     "description": "Craft beautiful, highly responsive, and user-centric interfaces for SaaS, OTT platforms, healthcare, and real estate systems. We transform complex design visions into pixel-perfect web reality.",
     "svgIcon": "<path d='M4 6h16v10H4zm17-2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z' fill='currentColor'/>",
-    "graphicImage": "Generative-AI.png",
+    "graphicImage": "Python-Programming.png",
     "fallbackText": "[ Frontend Interface Architecture ]"
   },
   {
@@ -20,7 +20,7 @@
     "title": "Python Programming",
     "description": "Scale your backend infrastructure with robust, clean Python solutions. We build fast, high-concurrency server architectures, automated scripts, and data-driven systems designed for efficiency.",
     "svgIcon": "<path d='M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z' fill='currentColor'/>",
-    "graphicImage": "Generative-AI.png",
+    "graphicImage": "Python-Programming.png",
     "fallbackText": "[ Core Server Engine Matrix ]"
   },
   {
@@ -28,7 +28,7 @@
     "title": "API Architecture & Integration",
     "description": "Design secure, lighting-fast RESTful APIs and real-time WebSockets. Using Django, DRF, and FastAPI, we build the rock-solid communication channels your frontend and mobile apps need to thrive.",
     "svgIcon": "<path d='M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm-8 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zm-8 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z' fill='currentColor'/>",
-    "graphicImage": "Generative-AI.png",
+    "graphicImage": "Python-Programming.png",
     "fallbackText": "[ Secure Interface Data Gateway ]"
   },
   {
@@ -36,7 +36,7 @@
     "title": "AI & Agentic Systems",
     "description": "Implement next-generation AI automation. We build autonomous AI agents, contextual workflows, and smart integrations using LangChain and LlamaIndex to give your business an intelligent edge.",
     "svgIcon": "<path d='M12 2c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l2.79-2.79C10.09 18.66 11.03 19 12 19c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z' fill='currentColor'/>",
-    "graphicImage": "Generative-AI.png",
+    "graphicImage": "Python-Programming.png",
     "fallbackText": "[ Agentic Cognitive Automation Node ]"
   },
   {
@@ -44,7 +44,7 @@
     "title": "Intelligent RAG Solutions",
     "description": "Connect massive language models directly to your company data. Using Retrieval-Augmented Generation (RAG) and the Model Context Protocol (MCP), we create deep-learning search engines for your custom knowledge bases.",
     "svgIcon": "<path d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z' fill='currentColor'/>",
-    "graphicImage": "Generative-AI.png",
+    "graphicImage": "Python-Programming.png",
     "fallbackText": "[ Vector Search Knowledge Database ]"
   }
 ]

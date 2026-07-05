@@ -2,6 +2,16 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import servicesData from '../../data/servicesData.json';
 
+const getServiceImage = (fileName) => {
+  if (!fileName) return '';
+
+  try {
+    return new URL(`../../assets/images/service/${fileName}`, import.meta.url).href;
+  } catch {
+    return '';
+  }
+};
+
 const ServicesSection = () => {
   return (
     <section id="services" className="services">
@@ -41,7 +51,7 @@ const ServicesSection = () => {
                 {/* Graphic Dynamic Layout Container */}
                 <div className="card-graphic-slot w-100 d-flex align-items-center justify-content-center overflow-hidden position-relative">
                   <img 
-                    src={service.graphicImage} 
+                    src={getServiceImage(service.graphicImage)} 
                     alt={service.fallbackText}
                     className="w-100 h-100 object-fit-cover"
                     onError={(e) => {

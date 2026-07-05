@@ -6,9 +6,8 @@
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.08, 1.08);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  border-color: var(--bs-purple);
 }
 
 .product-img-placeholder {

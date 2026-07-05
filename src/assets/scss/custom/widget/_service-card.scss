@@ -6,8 +6,7 @@
 }
 
 .service-card:hover {
-  border-color: #0284c7; /* var(--primary-color) */
-  transform: translateY(-5px);
+  transform: scale(1.08, 1.08);
   box-shadow: 0 15px 30px -5px rgba(2, 132, 199, 0.15);
 }
 

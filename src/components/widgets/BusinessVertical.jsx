@@ -9,7 +9,7 @@ export default function BusinessVertical({ icon, title }) {
         </div>
         <div className="test">
           <div className="glass">
-            <h6 className="py-2 mb-0 text-nowrap">{title}</h6>
+            <h6 className="py-1 mb-0 text-nowrap">{title}</h6>
           </div>
         </div>
       </div>
