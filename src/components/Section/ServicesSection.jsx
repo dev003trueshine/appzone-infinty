@@ -25,21 +25,21 @@ const ServicesSection = () => {
         </div>
         
         {/* Responsive Grid Layout */}
-        <Row className="g-4">
+        <Row className="g-5">
           {servicesData.map((service) => (
             <Col key={service.id} md={6} lg={4}>
-              <div className="service-card p-4 h-100 d-flex flex-column gap-3">
+              <div className="service-card p-4 h-100 d-flex flex-column gap-lg-5 gap-3">
                 
                 {/* Header Layout Frame */}
-                <div className="card-top-layout d-flex align-items-center gap-3">
-                  <div className="service-icon d-flex align-items-center justify-content-center flex-shrink-0">
+                <div className="card-top-layout">
+                  {/* <div className="service-icon d-flex align-items-center justify-content-center flex-shrink-0">
                     <svg 
                       width="26" 
                       height="26" 
                       viewBox="0 0 24 24" 
                       dangerouslySetInnerHTML={{ __html: service.svgIcon }}
                     />
-                  </div>
+                  </div> */}
                   <h3 className="text-white fs-5 font-weight-bold m-0">{service.title}</h3>
                 </div>
 
@@ -53,7 +53,7 @@ const ServicesSection = () => {
                   <img 
                     src={getServiceImage(service.graphicImage)} 
                     alt={service.fallbackText}
-                    className="w-100 h-100 object-fit-cover"
+                    className="img-fluid object-fit-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextElementSibling.style.display = 'block';
