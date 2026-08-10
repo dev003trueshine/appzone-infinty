@@ -5,7 +5,7 @@
     "description": "An all-in-one productivity suite featuring a fluid UI for image-to-PDF conversion, advanced document editing, and secure digital signatures. Built with secure Google login and privacy-first guest modes.",
     "category": "Productivity",
     "iconClass": "FilePdf",
-    "image": "./img/pdfbox-mockup.jpg",
+    "image": "./images/product/pdfbox.png",
     "actionText": "Get App",
     "actionUrl": "#contact",
     "hasArrow": true
@@ -16,7 +16,7 @@
     "description": "A timeless classic reimagined with stunning neon graphics. It features local and online multiplayer, smart AI opponents, and expanded grid challenges scaling up to 11x11 for ultimate brain training.",
     "category": "Free Play",
     "iconClass": "GameController",
-    "image": null,
+    "image": "./images/product/tic-tac-toe.jpg",
     "actionText": "Get Game",
     "actionUrl": "#contact",
     "hasArrow": false

@@ -28,6 +28,18 @@ const iconMap = {
   )
 };
 
+const getProductImage = (imagePath) => {
+  if (!imagePath) return '';
+
+  const normalizedFilename = imagePath.replace(/^\.\/(?:images\/product|img)\//, '');
+
+  try {
+    return new URL(`../../assets/images/product/${normalizedFilename}`, import.meta.url).href;
+  } catch {
+    return '';
+  }
+};
+
 const ProductsSection = () => {
   return (
     <section id="products" className="products">
@@ -55,7 +67,7 @@ const ProductsSection = () => {
                     {/* Render Image if available, with an fallback trigger */}
                     {product.image && (
                       <img 
-                        src={product.image} 
+                        src={getProductImage(product.image)} 
                         alt={`${product.title} Display Interface`} 
                         className="w-100 h-100 object-fit-cover position-relative z-1"
                         onError={(e) => { e.target.style.opacity = '0'; }}
