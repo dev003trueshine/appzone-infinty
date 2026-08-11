@@ -30,9 +30,7 @@ const iconMap = {
 
 const getProductImage = (imagePath) => {
   if (!imagePath) return '';
-
   const normalizedFilename = imagePath.replace(/^\.\/(?:images\/product|img)\//, '');
-
   try {
     return new URL(`../../assets/images/product/${normalizedFilename}`, import.meta.url).href;
   } catch {
@@ -59,17 +57,17 @@ const ProductsSection = () => {
 
             return (
               <Col key={product.id} md={6} lg={4}>
-                <Card className="product-card h-100">
-                  <div className="product-img-placeholder position-relative d-flex align-items-center justify-content-center overflow-hidden">
+                <Card className="product-card h-100 overflow-hidden">
+                  <div className="product-img-wrapper position-relative d-flex align-items-center justify-content-center">
                     {/* Placeholder Icon */}
                     <div className="placeholder-icon position-absolute">{productIcon}</div>
                     
-                    {/* Render Image if available, with an fallback trigger */}
+                    {/* Product Screenshot Banner */}
                     {product.image && (
                       <img 
                         src={getProductImage(product.image)} 
                         alt={`${product.title} Display Interface`} 
-                        className="w-100 h-100 object-fit-cover position-relative z-1"
+                        className="product-img position-relative z-1"
                         onError={(e) => { e.target.style.opacity = '0'; }}
                       />
                     )}

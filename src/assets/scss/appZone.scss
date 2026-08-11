@@ -395,3 +395,27 @@
     }
   }
 }
+// ==========================================
+// Product Card Image Fix
+// ==========================================
+.product-card {
+  background: #0b0f19;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  .product-img-wrapper {
+    width: 100%;
+    height: 220px; // Fixed frame height for uniformity
+    background: #050811;
+    overflow: hidden;
+    padding: 12px; // Prevents touching edges directly
+
+    .product-img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain; // Guarantees 100% full screenshot visibility
+      border-radius: 8px;
+    }
+  }
+}
