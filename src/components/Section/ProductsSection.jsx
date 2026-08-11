@@ -86,6 +86,7 @@ const ProductsSection = () => {
                         {product.category}
                       </span>
                       <Button 
+                        target="_blank"
                         href={product.actionUrl} 
                         className="btn-primary-custom d-inline-flex align-items-center gap-2 border-0"
                         style={{ padding: '8px 18px', fontSize: '0.85rem', borderRadius: '12px' }}

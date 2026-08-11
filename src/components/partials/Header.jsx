@@ -1,13 +1,36 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import logo from '../../assets/images/logo/logo.png';
 
 export default function Header() {
+  const handleSectionClick = (event, hash) => {
+    const nav = document.getElementById('mainNavbar');
+    const targetId = hash.replace('#', '');
+    const target = document.getElementById(targetId);
+
+    if (nav && nav.classList.contains('show')) {
+      event.preventDefault();
+      if (window.bootstrap && window.bootstrap.Collapse) {
+        const instance = window.bootstrap.Collapse.getInstance(nav) || new window.bootstrap.Collapse(nav, { toggle: false });
+        instance.hide();
+      } else {
+        nav.classList.remove('show');
+      }
+
+      setTimeout(() => {
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.location.hash = hash;
+        }
+      }, 200);
+    }
+  };
+
   return (
     <header className="app-header shadow-sm">
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light px-0 py-3">
-          <a className="navbar-brand d-flex align-items-center gap-2 p-0" href="#">
+        <nav className="navbar navbar-light px-0 py-3">
+          <a className="navbar-brand d-flex align-items-center gap-2 p-0 me-3" href="#">
             <img src={logo} alt="Appzone Infinity logo" className="app-header__logo img-fluid" />
           </a>
 
@@ -42,16 +65,16 @@ export default function Header() {
           <div className="collapse navbar-collapse justify-content-end" id="mainNavbar">
             <ul className="navbar-nav gap-lg-3">
               <li className="nav-item">
-                <a className="nav-link" href="#services">Services</a>
+                <a className="nav-link" href="#services" onClick={(e) => handleSectionClick(e, '#services')}>Services</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#products">Our Product</a>
+                <a className="nav-link" href="#products" onClick={(e) => handleSectionClick(e, '#products')}>Our Product</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#classes">Classes</a>
+                <a className="nav-link" href="#classes" onClick={(e) => handleSectionClick(e, '#classes')}>Classes</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
+                <a className="nav-link" href="#contact" onClick={(e) => handleSectionClick(e, '#contact')}>Contact</a>
               </li>
             </ul>
           </div>
