@@ -47,11 +47,30 @@ export default function Header() {
     };
   }, [isOpen]);
 
+  const navigateTo = (path) => {
+    if (isOpen) setIsOpen(false);
+    if (window.location.pathname === path) return;
+    window.history.pushState({}, '', path);
+    window.dispatchEvent(new PopStateEvent('popstate'));
+  };
+
+  const navigateToSection = (hash) => {
+    if (isOpen) setIsOpen(false);
+    const targetPath = '/';
+    const targetUrl = `${targetPath}${hash}`;
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({}, '', targetUrl);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    } else {
+      window.location.hash = hash;
+    }
+  };
+
   return (
     <header className="app-header shadow-sm">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light px-0 py-3">
-          <a className="navbar-brand d-flex align-items-center gap-2 p-0 me-3" href="#">
+          <a className="navbar-brand d-flex align-items-center gap-2 p-0 me-3" href="/" onClick={(e) => { e.preventDefault(); navigateTo('/'); }}>
             <img src={logo} alt="Appzone Infinity logo" className="app-header__logo img-fluid" />
           </a>
 
@@ -85,8 +104,8 @@ export default function Header() {
           <div className={"collapse navbar-collapse justify-content-end" + (isOpen ? ' show navbar-fullscreen' : '')} id="mainNavbar">
             {isOpen && (
               <div className="navbar-fullscreen-header d-flex align-items-center justify-content-between px-3">
-                <a className="navbar-brand d-flex align-items-center gap-2 p-0" href="#" onClick={() => setIsOpen(false)}>
-                  <img src={logo} alt="Appzone Infinity logo" className="app-header__logo img-fluid" />
+                <a className="navbar-brand d-flex align-items-center gap-2 p-0" href="/" onClick={(e) => { e.preventDefault(); navigateTo('/'); }}>
+                  <img src={logo} alt="Appzone Infinity logo" className="app-header__logo img-fluid"/>
                 </a>
                 <button className="navbar-fullscreen-close btn p-0" aria-label="Close menu" onClick={() => setIsOpen(false)}>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -98,16 +117,16 @@ export default function Header() {
             )}
             <ul className="navbar-nav gap-lg-3">
               <li className="nav-item">
-                <a className="nav-link" href="#services" onClick={(e) => handleSectionClick(e, '#services')}>Services</a>
+                <a className="nav-link" href="/#services" onClick={(e) => { e.preventDefault(); navigateToSection('#services'); }}>Services</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#products" onClick={(e) => handleSectionClick(e, '#products')}>Our Product</a>
+                <a className="nav-link" href="/#products" onClick={(e) => { e.preventDefault(); navigateToSection('#products'); }}>Our Product</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#classes" onClick={(e) => handleSectionClick(e, '#classes')}>Classes</a>
+                <a className="nav-link" href="/#classes" onClick={(e) => { e.preventDefault(); navigateToSection('#classes'); }}>Classes</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact" onClick={(e) => handleSectionClick(e, '#contact')}>Contact</a>
+                <a className="nav-link" href="/contact" onClick={(e) => { e.preventDefault(); navigateTo('/contact'); }}>Contact</a>
               </li>
             </ul>
           </div>

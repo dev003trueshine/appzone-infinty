@@ -125,7 +125,7 @@
 //     </Container>
 //   );
 // }
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import Title from './widgets/Title';
 import ServicesSection from './Section/ServicesSection';
@@ -157,13 +157,30 @@ import educationImg from '../assets/images/business/education.png';
 import Banner from './widgets/Banner';
 
 export default function Home() {
+  useEffect(() => {
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (!hash) return;
+      const target = document.querySelector(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+      }
+    };
+
+    scrollToHash();
+    window.addEventListener('hashchange', scrollToHash);
+    return () => window.removeEventListener('hashchange', scrollToHash);
+  }, []);
+
   return (
     <Container className="">
       <Banner />
-      <section>
+      <section id="services">
         <ServicesSection />
       </section>
-      <section>
+      <section id="products">
         <ProductsSection />
       </section>
 
@@ -271,6 +288,7 @@ export default function Home() {
       <section>
         <ClassesSection />
       </section>
+      {/* Contact page moved to its own route/file */}
     </Container>
   );
 }
