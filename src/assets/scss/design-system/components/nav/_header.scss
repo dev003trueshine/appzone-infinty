@@ -50,3 +50,65 @@ header {
 .app-header .nav-link:hover {
   color: var(--bs-primary);
 }
+
+@include media-breakpoint-down(md) {
+.app-header__logo {
+      height: 45px;
+}
+}
+
+// Fullscreen mobile navbar (moved from Header.jsx inline styles)
+.navbar-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(7, 10, 18, 0.98);
+  z-index: 1055;
+  padding-top: 4rem;
+  display: block;
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding-left: 1.25rem;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    font-size: 1.125rem;
+    padding: 0.5rem 0;
+  }
+
+  .app-header__logo {
+    height: 36px;
+  }
+
+  .navbar-fullscreen-close {
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+    svg {
+      width: 28px;
+      height: 28px;
+      color: #fff;
+      stroke: #fff;
+    }
+  }
+}
+
+.navbar-fullscreen-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}

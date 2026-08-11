@@ -160,10 +160,10 @@ export default function Home() {
   return (
     <Container className="">
       <Banner />
-      <section className="Section-spacing">
+      <section>
         <ServicesSection />
       </section>
-      <section className="Section-spacing">
+      <section>
         <ProductsSection />
       </section>
 
@@ -243,7 +243,7 @@ export default function Home() {
 
       <section className="Section-spacing">
         <Title text="Our Vision & Mission" className="mb-5 text-center" />
-        <Row className="align-items-center justify-content-center position-relative">
+        <Row className="align-items-center justify-content-center position-relative gy-4">
           <Col lg={6}>
             <VisionCard
               icon={<img src="https://kalkani.in/assets/img/vision-and-mission/our-vision.png" alt="Our Vision" width="100px" />}
@@ -268,7 +268,7 @@ export default function Home() {
         </Row>
       </section>
 
-      <section className="Section-spacing">
+      <section>
         <ClassesSection />
       </section>
     </Container>

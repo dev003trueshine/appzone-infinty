@@ -42,7 +42,7 @@ const getProductImage = (imagePath) => {
 
 const ProductsSection = () => {
   return (
-    <section id="products" className="products">
+    <section id="products" className="products Section-spacing">
       <Container>
         {/* Section Header */}
         <div className="section-header text-center mb-5 reveal visible">

@@ -208,7 +208,7 @@ const courses = [
 
 const ClassesSection = () => {
   return (
-    <section id="classes" className="classes-section py-5">
+    <section id="classes" className="classes-section Section-spacing">
       <Container>
         <Row className="align-items-center g-5">
           {/* Left Main Content */}

@@ -14,7 +14,7 @@ const getServiceImage = (fileName) => {
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="services">
+    <section id="services" className="services Section-spacing">
       <Container>
         {/* Section Header */}
         <div className="section-header text-center mb-5 reveal visible">
