@@ -69,8 +69,8 @@ export default function Header() {
   return (
     <header className="app-header shadow-sm">
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light px-0 py-3">
-          <a className="navbar-brand d-flex align-items-center gap-2 p-0 me-3" href="/" onClick={(e) => { e.preventDefault(); navigateTo('/'); }}>
+        <nav className="navbar navbar-expand-lg gap-4 navbar-light px-0 py-3 justify-content-between">
+          <a className="navbar-brand d-flex align-items-center gap-2 p-0" href="/" onClick={(e) => { e.preventDefault(); navigateTo('/'); }}>
             <img src={logo} alt="Appzone Infinity logo" className="app-header__logo img-fluid" />
           </a>
 
@@ -129,7 +129,24 @@ export default function Header() {
                 <a className="nav-link" href="/contact" onClick={(e) => { e.preventDefault(); navigateTo('/contact'); }}>Contact</a>
               </li>
             </ul>
+            <div className="d-lg-none w-100 mt-4 px-3">
+              <button
+                type="button"
+                className="btn btn-primary header-cta-btn w-100"
+                onClick={() => { setIsOpen(false); navigateTo('/contact'); }}
+              >
+                Book FREE Consultation!
+              </button>
+            </div>
           </div>
+
+          <button
+            type="button"
+            className="btn btn-primary header-cta-btn d-none d-lg-inline-flex ms-3"
+            onClick={() => navigateTo('/contact')}
+          >
+            Book FREE Consultation!
+          </button>
         </nav>
       </div>
     </header>
