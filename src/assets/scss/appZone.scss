@@ -350,50 +350,190 @@
       background: linear-gradient(135deg, #9333ea 0%, #4f46e5 100%);
     }
   }
+}
+/* Alternative 1: Showcase & Metrics Strip */
+.mentorship-showcase {
+  background: radial-gradient(circle at top left, rgba(168, 85, 247, 0.12), transparent 70%), #0b0f19;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
-  /* Right Side Feature Box */
-  .feature-card-modern {
-    background: #0b0f19;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
+  .showcase-card {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(168, 85, 247, 0.25);
     transition: all 0.3s ease;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(180deg, #a855f7, #3b82f6);
-      opacity: 0.7;
+    &:hover {
+      border-color: rgba(168, 85, 247, 0.6);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px -5px rgba(168, 85, 247, 0.3);
     }
 
-    .feature-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 12px;
-      background: rgba(168, 85, 247, 0.1);
-      border: 1px solid rgba(168, 85, 247, 0.2);
+    .badge-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
       color: #c084fc;
+      background: rgba(168, 85, 247, 0.15);
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+
+      &.text-cyan {
+        color: #38bdf8;
+        background: rgba(56, 189, 248, 0.15);
+      }
+    }
+
+    .icon-badge {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      
+      &.text-purple { color: #c084fc; }
+      &.text-cyan { color: #38bdf8; }
+    }
+  }
+
+  .metrics-strip {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    .extra-small {
+      font-size: 0.75rem;
+    }
+  }
+}// ==========================================
+// High-Impact Student Focus Cards
+// ==========================================
+.bootcamp-highlight-container {
+  background: radial-gradient(circle at top right, rgba(168, 85, 247, 0.15), transparent 70%), #0b0f19;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+
+  /* Pulse Urgency Badge */
+  .cohort-pulse-badge {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 6px 14px;
+    border-radius: 20px;
+    
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #ef4444;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #ef4444;
+      animation: pulseAnimation 1.5s infinite;
+    }
+
+    .badge-text {
+      color: #fca5a5;
+      font-size: 0.775rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  /* Cards Styling */
+  .impact-card {
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.35s ease;
+
+    &.featured-card {
+      border-color: rgba(168, 85, 247, 0.5);
+      background: linear-gradient(145deg, rgba(168, 85, 247, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%);
+      box-shadow: 0 8px 25px -5px rgba(168, 85, 247, 0.25);
+
+      &:hover {
+        transform: translateY(-4px);
+        border-color: rgba(168, 85, 247, 0.8);
+        box-shadow: 0 12px 30px -5px rgba(168, 85, 247, 0.4);
+      }
+    }
+
+    &.secondary-card {
+      border-color: rgba(56, 189, 248, 0.3);
+
+      &:hover {
+        transform: translateY(-4px);
+        border-color: rgba(56, 189, 248, 0.7);
+        box-shadow: 0 12px 30px -5px rgba(56, 189, 248, 0.25);
+      }
+    }
+
+    .card-icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
 
-    &:hover {
-      transform: translateY(-4px);
-      border-color: rgba(168, 85, 247, 0.35);
-      box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.25);
-
-      .feature-icon {
+      &.purple-glow {
         background: rgba(168, 85, 247, 0.2);
-        color: #ffffff;
+        color: #c084fc;
+      }
+
+      &.cyan-glow {
+        background: rgba(56, 189, 248, 0.2);
+        color: #38bdf8;
       }
     }
+
+    .status-pill {
+      font-size: 0.725rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+
+      &.purple {
+        background: rgba(168, 85, 247, 0.2);
+        color: #d8b4fe;
+      }
+
+      &.cyan {
+        background: rgba(56, 189, 248, 0.2);
+        color: #7dd3fc;
+      }
+    }
+
+    /* Tech Pills */
+    .tech-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1;
+      font-size: 0.725rem;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
   }
+
+  /* Stats Bar */
+  .impact-stats-bar {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    .stat-num {
+      font-size: 1.1rem;
+      color: #f8fafc;
+    }
+
+    .stat-label {
+      font-size: 0.725rem;
+    }
+
+    .stat-divider {
+      width: 1px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+/* Keyframe for Red Dot Pulse */
+@keyframes pulseAnimation {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.3); }
+  100% { opacity: 1; transform: scale(1); }
 }
 // ==========================================
 // Product Card Image Fix
@@ -417,5 +557,192 @@
       object-fit: contain; // Guarantees 100% full screenshot visibility
       border-radius: 8px;
     }
+  }
+}
+// ==========================================
+// Our Vision & Mission Card Fix
+// ==========================================
+.vision-section {
+  .vision-card {
+    background: #0f172a;
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba(168, 85, 247, 0.6);
+      box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.3);
+    }
+
+    img {
+      height: auto;
+      object-fit: contain;
+    }
+
+    h4, h3, .vision-title {
+      color: #ffffff;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p, .vision-desc {
+      color: #94a3b8;
+      font-size: 0.925rem;
+      line-height: 1.6;
+    }
+  }
+}
+// ==========================================
+// Filterable Course Catalogue (Jio Business Style)
+// ==========================================
+.courses-catalogue-section {
+  background-color: #030712;
+
+  .badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(168, 85, 247, 0.1);
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    color: #c084fc;
+    font-size: 0.825rem;
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #a855f7;
+      box-shadow: 0 0 8px #a855f7;
+    }
+  }
+
+  /* Left Sidebar Filter */
+  .filter-sidebar {
+    background: #0b0f19;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    .filter-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.02);
+      color: #94a3b8;
+      font-size: 0.925rem;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      cursor: pointer;
+
+      .count-badge {
+        font-size: 0.75rem;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 2px 8px;
+        border-radius: 10px;
+        color: #cbd5e1;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.06);
+        color: #ffffff;
+      }
+
+      &.active {
+        background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(99, 102, 241, 0.2));
+        border: 1px solid rgba(168, 85, 247, 0.4) !important;
+        color: #ffffff;
+        font-weight: 600;
+
+        .count-badge {
+          background: #a855f7;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .placement-mini-card {
+      background: linear-gradient(145deg, rgba(168, 85, 247, 0.1), rgba(15, 23, 42, 0.8));
+      border: 1px dashed rgba(168, 85, 247, 0.3);
+    }
+  }
+
+  /* Course Cards */
+  .course-card {
+    background: #0f172a;
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+    .course-category-pill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(168, 85, 247, 0.15);
+      color: #c084fc;
+      border: 1px solid rgba(168, 85, 247, 0.3);
+    }
+
+    .tech-logo-wrapper {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+    }
+
+    .course-card-title {
+      line-height: 1.35;
+    }
+
+    .course-card-desc {
+      line-height: 1.55;
+      color: #94a3b8 !important;
+    }
+
+    /* Round Arrow Action Button (Jio Style) */
+    .open-course-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      color: #c084fc;
+      transition: all 0.3s ease;
+      text-decoration: none;
+
+      &:hover {
+        background: #a855f7;
+        color: #ffffff;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+      }
+    }
+
+    /* Card Hover */
+    &:hover {
+      transform: translateY(-5px);
+      border-color: rgba(168, 85, 247, 0.6);
+      box-shadow: 0 12px 30px -10px rgba(168, 85, 247, 0.35);
+    }
+  }
+
+  .extra-small {
+    font-size: 0.75rem;
+  }
+
+  .text-purple {
+    color: #c084fc;
   }
 }

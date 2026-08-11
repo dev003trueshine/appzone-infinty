@@ -258,8 +258,8 @@ export default function Home() {
         </Row>
       </section>
 
-      <section className="Section-spacing">
-        <Title text="Our Vision & Mission" className="mb-5 text-center" />
+      {/* <section className="Section-spacing">
+        <Title text="Our Vision" className="mb-5 text-center" />
         <Row className="align-items-center justify-content-center position-relative gy-4">
           <Col lg={6}>
             <VisionCard
@@ -283,8 +283,39 @@ export default function Home() {
             </div>
           </Col>
         </Row>
+      </section> */}
+{/* OUR VISION & MISSION SECTION */}
+      <section className="Section-spacing vision-section">
+        <Title text="Our Vision & Mission" className="mb-5 text-center" />
+        <Row className="justify-content-center g-4">
+          <Col lg={6} className="d-flex">
+            <VisionCard
+              icon={
+                <img 
+                  src="https://kalkani.in/assets/img/vision-and-mission/our-vision.png" 
+                  alt="Our Vision" 
+                  width="64px" 
+                />
+              }
+              title="Our Vision"
+              description="To empower businesses globally through innovative mobile and web solutions, driving digital transformation with high-performance engineering."
+            />
+          </Col>
+          <Col lg={6} className="d-flex">
+            <VisionCard
+              icon={
+                <img 
+                  src="https://kalkani.in/assets/img/vision-and-mission/our-mission.png" 
+                  alt="Our Mission" 
+                  width="64px" 
+                />
+              }
+              title="Our Mission"
+              description="To deliver scalable, production-grade applications with exceptional design, transparent timelines, and uncompromised software quality."
+            />
+          </Col>
+        </Row>
       </section>
-
       <section>
         <ClassesSection />
       </section>
