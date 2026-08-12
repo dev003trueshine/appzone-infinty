@@ -411,13 +411,13 @@ const ClassesSection = () => {
     : coursesData.filter(course => course.category === activeTab);
 
   return (
-    <section id="classes" className="courses-catalogue-section py-5">
+    <section id="classes" className="courses-catalogue-section Section-spacing">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-5">
-          <span className="badge-pill mb-2">
+          {/* <span className="badge-pill mb-2">
             <span className="dot"></span> Live Bootcamps & Mentorship
-          </span>
+          </span> */}
           <h2 className="main-heading text-white fw-bold">
             Explore Our <span className="text-gradient">Industry-Ready Courses</span>
           </h2>

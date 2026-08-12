@@ -220,17 +220,17 @@
     &:hover {
       transform: translateY(-6px);
       border-color: rgba(168, 85, 247, 0.6);
-      box-shadow: 0 12px 30px -10px rgba(168, 85, 247, 0.35);
+      // box-shadow: 0 12px 30px -10px rgba(168, 85, 247, 0.35);
 
       .process-icon-box {
         background: rgba(168, 85, 247, 0.25);
         color: #ffffff;
-        box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        // box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
       }
 
       .step-badge {
         transform: scale(1.05);
-        box-shadow: 0 6px 20px rgba(168, 85, 247, 0.7);
+        // box-shadow: 0 6px 20px rgba(168, 85, 247, 0.7);
       }
     }
   }

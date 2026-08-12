@@ -25,4 +25,10 @@ footer {
    color: var(--bs-heading-color);
    transform: translateY(-2px);
  }
+ 
+
+ .call-btn svg {
+   min-width: 20px;
+ }
+
 }

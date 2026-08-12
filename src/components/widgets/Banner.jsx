@@ -29,11 +29,11 @@ export default function Banner() {
                 <p className="banner-desc">
                   Novus creates agentic systems and products, providing platforms where teams can turn tasks into working AI agents and manage everything in one place.
                 </p>
-                <div className="banner-buttons d-flex gap-3 flex-wrap justify-content-center">
-                  <a href="#products" className="btn btn-primary">
+                <div className="banner-buttons d-flex gap-3 flex-wrap justify-content-center mt-5 pt-lg-5 pt-3">
+                  <a href="#products" className="btn btn-outline-primary">
                     Explore Products
                   </a>
-                  <a href="#contact" className="btn btn-link d-flex align-items-center gap-2">
+                  <a href="#contact" className="btn btn-primary d-flex align-items-center gap-2">
                     Contact us <i className="ph ph-arrow-right"></i>
                   </a>
                 </div>
