@@ -204,7 +204,7 @@ export default function Home() {
       <section className="Section-spacing">
         <Container>
           <Title text="Business Verticals We Served" className="mb-5 text-center" />
-          <Row xs={1} md={2} lg={6} className="gy-4">
+          <Row xs={2} md={2} lg={6} className="gy-4">
             {businessVerticals.map((item, idx) => {
               const images = {
                 'banking.png': bankingImg,
