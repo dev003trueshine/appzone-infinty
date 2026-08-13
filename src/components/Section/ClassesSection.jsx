@@ -343,68 +343,20 @@
 
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import coursesData from '../../data/coursesData';
 
-const coursesData = [
-  {
-    id: 'flutter',
-    category: 'Flutter',
-    title: 'Flutter & iOS / Android App Development',
-    description: 'Master Clean Architecture, State Management (BLoC/GetX), and REST API Integration for production apps.',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
-    badge: 'Mobile App',
-    duration: '12 Weeks Live'
-  },
-  {
-    id: 'python',
-    category: 'Python',
-    title: 'Python Backend & API Engineering',
-    description: 'Learn Core Python, FastAPI, Django, Object-Oriented Programming, and Scalable Database Architecture.',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-    badge: 'Backend & AI',
-    duration: '10 Weeks Live'
-  },
-  {
-    id: 'react',
-    category: 'React JS',
-    title: 'Modern Web Development with React.js',
-    description: 'Build high-performance web applications using React, Redux Toolkit, Tailwind CSS, and REST API integration.',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    badge: 'Frontend',
-    duration: '8 Weeks Live'
-  },
-  {
-    id: 'html-css',
-    category: 'HTML & CSS',
-    title: 'Responsive UI/UX & Web Design Fundamentals',
-    description: 'Master semantic HTML5, modern CSS3 (Flexbox/Grid), SCSS, and responsive design systems from scratch.',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-    badge: 'Design & Web',
-    duration: '4 Weeks Live'
-  },
-  {
-    id: 'react-native',
-    category: 'React JS',
-    title: 'Cross-Platform React Native Apps',
-    description: 'Build native iOS & Android experiences using React, TypeScript, and modern mobile tooling.',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    badge: 'Mobile App',
-    duration: '8 Weeks Live'
-  },
-  {
-    id: 'qa-testing',
-    category: 'QA & Testing',
-    title: 'Software Testing & QA Engineering',
-    description: 'Manual & Automated Testing, API Testing with Postman, Test Case Writing, and Bug Tracking.',
-    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg',
-    badge: 'Quality Assurance',
-    duration: '6 Weeks Live'
-  }
-];
-
-const categories = ['All Courses', 'Flutter', 'Python', 'React JS', 'HTML & CSS', 'QA & Testing'];
+const categories = ['All Courses', 'Flutter', 'Python', 'HTML & CSS', 'QA & Testing'];//'React JS',
 
 const ClassesSection = () => {
   const [activeTab, setActiveTab] = useState('All Courses');
+
+  const openCoursePage = (courseId) => {
+    const path = `/course/${courseId}`;
+    if (window.location.pathname !== path) {
+      window.history.pushState({}, '', path);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    }
+  };
 
   const filteredCourses = activeTab === 'All Courses' 
     ? coursesData 
@@ -461,7 +413,12 @@ const ClassesSection = () => {
             <Row className="g-4">
               {filteredCourses.map((course) => (
                 <Col key={course.id} md={6}>
-                  <div className="course-card h-100 p-4 rounded-4 position-relative d-flex flex-column justify-content-between">
+                  <div
+                    role="button"
+                    onClick={() => openCoursePage(course.id)}
+                    className="course-card h-100 p-4 rounded-4 position-relative d-flex flex-column justify-content-between"
+                    style={{ cursor: 'pointer' }}
+                  >
                     <div>
                       {/* Top Bar with Badge & Tech Logo */}
                       <div className="d-flex align-items-center justify-content-between mb-3">
@@ -481,7 +438,7 @@ const ClassesSection = () => {
                       <span className="duration-text text-purple extra-small fw-semibold">
                         ⏱ {course.duration}
                       </span>
-                      <a href="#contact" className="open-course-btn d-flex align-items-center justify-content-center">
+                      <a href={`#/course/${course.id}`} className="open-course-btn d-flex align-items-center justify-content-center" onClick={(e) => { e.preventDefault(); openCoursePage(course.id); }}>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <line x1="5" y1="12" x2="19" y2="12"></line>
                           <polyline points="12 5 19 12 12 19"></polyline>
@@ -492,6 +449,7 @@ const ClassesSection = () => {
                 </Col>
               ))}
             </Row>
+            {/* detail page handled by App route */}
           </Col>
         </Row>
       </Container>
