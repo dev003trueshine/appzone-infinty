@@ -746,3 +746,424 @@
     color: #c084fc;
   }
 }
+/* Background & Layout */
+.course-detail-wrapper {
+  background: #070913;
+  min-height: 100vh;
+  color: #e2e8f0;
+}
+
+/* Breadcrumb & Navigation */
+.btn-back-link {
+  background: transparent;
+  border: none;
+  color: #a855f7;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+.btn-back-link:hover {
+  transform: translateX(-4px);
+  color: #c084fc;
+}
+
+/* Glassmorphism Containers */
+.glass-card {
+  background: rgba(18, 24, 38, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+.icon-container {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badge-category {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.badge-highlight {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.course-main-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.course-desc-text {
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.divider {
+  border-color: rgba(255, 255, 255, 0.08);
+  margin: 24px 0;
+}
+
+/* Highlights Grid */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.highlight-pill {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-icon {
+  color: #4ade80;
+  font-weight: bold;
+}
+
+/* Custom Accordion */
+.custom-accordion .accordion-item {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+  background: transparent !important;
+  color: #fff !important;
+  font-weight: 600;
+  box-shadow: none !important;
+  padding: 18px 20px;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background: rgba(168, 85, 247, 0.08) !important;
+  color: #c084fc !important;
+}
+
+.module-number {
+  font-weight: 700;
+  color: #a855f7;
+  margin-right: 14px;
+}
+
+.syllabus-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.syllabus-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.syllabus-list li::before {
+  content: '•';
+  position: absolute;
+  left: 4px;
+  color: #a855f7;
+}
+
+/* Sidebar & CTA Card */
+.sticky-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.enroll-card {
+  background: linear-gradient(145deg, #161b2e 0%, #0d111d 100%);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meta-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+  font-size: 0.88rem;
+}
+
+.meta-label {
+  color: #94a3b8;
+}
+
+.meta-val {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-enroll-primary {
+  background: linear-gradient(90deg, #7928ca, #2b86ff);
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-enroll-primary:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(121, 40, 202, 0.4);
+}
+
+/* Modal Styling */
+.dark-theme-modal .modal-content {
+  background: #0f1422;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.custom-input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  padding: 10px 14px;
+}
+
+.custom-input:focus {
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.2) !important;
+}
+
+.btn-close-custom {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.success-icon {
+  font-size: 3rem;
+}
+
+.btn-secondary-custom {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* Custom Dark Theme Accordion for Syllabus */
+.accordion-item-custom {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: rgba(168, 85, 247, 0.3);
+  }
+}
+
+.accordion-trigger {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &.active {
+    background: rgba(168, 85, 247, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    .module-title {
+      color: #c084fc !important;
+    }
+  }
+}
+
+.module-number {
+  color: #a855f7;
+  font-weight: 700;
+  font-size: 0.85rem;
+  background: rgba(168, 85, 247, 0.15);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.accordion-icon {
+  color: #a855f7;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.accordion-content {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.syllabus-list {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    color: #cbd5e1 !important; /* Soft bright text for readability */
+    font-size: 0.88rem;
+    line-height: 1.5;
+
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: #a855f7;
+    }
+  }
+}
+/* Bootstrap Accordion Overrides */
+.accordion-button {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+  &:not(.collapsed) {
+    background-color: rgba(168, 85, 247, 0.12) !important;
+    color: #c084fc !important;
+  }
+
+  &::after {
+    filter: invert(1); /* Arrow icon dark background me visible karne ke liye */
+  }
+}
+
+.accordion-body {
+  background-color: rgba(10, 14, 26, 0.85) !important;
+  color: #cbd5e1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: none;
+}
+/* --- Force Dark Theme on Curriculum Card & Accordion --- */
+.course-detail-wrapper {
+  background-color: #070913 !important;
+}
+
+/* Outer Card Container */
+.glass-card {
+  background-color: #0f1424 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+}
+
+/* Custom Accordion Items */
+.custom-accordion .accordion-item-custom {
+  background-color: #14192b !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+/* Accordion Header / Trigger */
+.custom-accordion .accordion-trigger {
+  background-color: #14192b !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  width: 100%;
+}
+
+.custom-accordion .accordion-trigger span {
+  color: #ffffff !important;
+}
+
+.custom-accordion .accordion-trigger .module-number {
+  color: #c084fc !important;
+  background-color: rgba(168, 85, 247, 0.18) !important;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.custom-accordion .accordion-trigger.active {
+  background-color: #1a2238 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.custom-accordion .accordion-trigger.active span.fw-semibold {
+  color: #c084fc !important;
+}
+
+/* Accordion Body & List Content */
+.custom-accordion .accordion-content {
+  background-color: #0d111e !important;
+}
+
+.custom-accordion .syllabus-list li {
+  color: #cbd5e1 !important; /* Crystal clear soft white text */
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.custom-accordion .syllabus-list li::before {
+  color: #a855f7 !important;
+}
+
+/* Bootstrap default accordion fallback reset */
+.accordion-item,
+.accordion,
+.accordion-header,
+.accordion-collapse {
+  background-color: transparent !important;
+}
+/* Pricing Cards in Sidebar */
+.price-option-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: rgba(168, 85, 247, 0.5);
+  }
+
+  &.active {
+    background: rgba(168, 85, 247, 0.12);
+    border-color: #a855f7;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
+  }
+}

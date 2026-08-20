@@ -6,6 +6,9 @@ const coursesData = [
     description: 'Master Clean Architecture, State Management (BLoC/GetX), and REST API Integration for production apps.',
     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
     badge: 'Mobile App',
+    price: 18000,
+    originalPrice: 24000,
+    emiPrice: 9000,
     duration: '10 Weeks Live',
     about: `Bring your app ideas to life with Flutter & Dart. In this hands-on course you'll learn how to design, build, and deploy cross-platform apps that look and feel native on Android and iOS. Through step-by-step lessons and real-world projects you'll master UI design, navigation, data handling, API integration, and deployment. By the end you'll deliver production-ready, responsive apps and a capstone project for your portfolio.`,
     highlights: [
